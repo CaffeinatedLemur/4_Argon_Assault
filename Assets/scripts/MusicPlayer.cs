@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MusicPlayer : MonoBehaviour
+public class musicPlayer : MonoBehaviour
 {
     private void Awake()
     {
