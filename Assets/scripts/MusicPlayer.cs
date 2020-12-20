@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class musicPlayer : MonoBehaviour
+public class MusicPlayer : MonoBehaviour
 {
     private void Awake()
     {
@@ -13,9 +13,9 @@ public class musicPlayer : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        Invoke("LoadFirstScene", 2f);
+        //Invoke("LoadFirstScene", 2f);
     }
-    void LoadFirstScene()
+    public void LoadFirstScene()
     {
         SceneManager.LoadScene(1);
     }
