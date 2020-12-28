@@ -33,9 +33,11 @@ public class LoadingScreenControl : MonoBehaviour
             if (async.progress == 0.9f)
             {
                 slider.value = 1f;
-                if (Input.anyKey)
+                if (Input.anyKeyDown && slider.value == 1f)
+                {
                     StartCoroutine(Fading());
                     async.allowSceneActivation = true;
+                }
             }
             yield return null;
         }
@@ -46,6 +48,8 @@ public class LoadingScreenControl : MonoBehaviour
         anim.SetBool("Fade", true);
         yield return new WaitUntil(() => fadeImage.color.a == 1);
     }
+
+  
 
     // Start is called before the first frame update
     void Start()
