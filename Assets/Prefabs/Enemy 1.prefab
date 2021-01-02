@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 147156094999773404}
   - component: {fileID: 155930885979172580}
   - component: {fileID: -3280082884992974655}
+  - component: {fileID: -6088872028530875093}
   m_Layer: 0
   m_Name: Enemy 1
   m_TagString: Untagged
@@ -94,4 +95,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b, type: 3}
   parent: {fileID: 0}
+  scorePerHit: 2
+  hits: 3
   explodtion: {fileID: 1000011128802252, guid: 96730f8640590934eacb6f860058e7f9, type: 3}
+--- !u!114 &-6088872028530875093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178870437070586112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d6d6bb3efff03f418d628abde71ec3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  terrainCollider: {fileID: 0}
